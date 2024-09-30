@@ -1,0 +1,44 @@
+.submit,
+.reset {
+  padding: 10px 30px;
+  background-color: var(--main-color);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  min-width: 200px;
+  font-weight: bold;
+}
+
+.reset,.back, .delete   {
+  background-color: #e1e5f2;
+  color: var(--main-color);
+}
+
+.back,.delete {
+  font-weight: bold;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+}
+
+.delete {
+  width: 140px;
+  z-index: 111;
+}
+
+.back {
+  font-weight: bold;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    margin-top: 10px;
+    width: 150px;
+    margin: 10px auto;
+}
+
+@media (max-width: 800px) {
+  .reset, .submit, .delete {
+    margin-bottom: 15px;
+  }
+}

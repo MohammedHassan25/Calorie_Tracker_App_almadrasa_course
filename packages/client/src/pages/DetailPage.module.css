@@ -1,0 +1,21 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 768px;
+  margin: auto;
+  padding: 10px;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  color: #7a46a9;
+  font-weight: bold;
+  border-bottom: 1px solid black;
+}
+
+.item:last-child {
+  border-bottom: none;
+}
+
+

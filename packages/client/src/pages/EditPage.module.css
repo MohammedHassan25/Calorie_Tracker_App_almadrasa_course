@@ -1,0 +1,92 @@
+.form {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  max-width: 768px;
+  padding-bottom: 20px;
+  margin: auto;
+}
+
+.row-form {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  height: 100px;
+  width: 300px;
+}
+
+.btn {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nested-div-form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-basis: 100%;
+}
+
+.nested-div-form .input {
+  width: 165px;
+  height: 30px;
+  border: 2px solid var(--main-color);
+  outline: none;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  font-weight: bold;
+}
+
+.notValid {
+  border: 2px solid maroon;
+  width: 165px;
+  height: 30px;
+  outline: none;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+
+button:disabled {
+  background-color: lightgray;
+  color: gray;
+  border-width: 0;
+  pointer-events: none;
+}
+
+.record {
+  background-color: #fec401;
+  margin: 0 0 5px 0;
+  max-width:90%;
+  border-radius:5px;
+  -webkit-border-radius:5px;
+  -moz-border-radius:5px;
+  -ms-border-radius:5px;
+  -o-border-radius:5px;
+  font-weight: bold;
+  padding: 5px;
+  margin: auto;
+}
+
+@media (max-width: 800px) {
+  .form {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+  }
+  .btn {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    justify-content: space-between;
+  }
+}

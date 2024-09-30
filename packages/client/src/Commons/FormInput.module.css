@@ -1,0 +1,24 @@
+.input {
+  width: 165px;
+  height: 30px;
+  border: 2px solid var(--main-color);
+  outline: none;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  font-weight: bold;
+}
+
+.notValid {
+  border: 2px solid maroon;
+  width: 165px;
+  height: 30px;
+  outline: none;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}

@@ -1,0 +1,14 @@
+.allRecords {
+  margin-top: 40px;
+  padding: 20px;
+  border: 1px solid var(--main-color);
+  border-radius: 6px;
+  flex-direction: column-reverse;
+}
+
+.p {
+  color: var(--main-color);
+  width: 100%;
+  font-weight: bold;
+  text-align: center;
+}

@@ -1,0 +1,27 @@
+.layout {
+  position: absolute;
+  display: flex;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  gap: 10px;
+}
+.content-wrapper {
+  margin: 10px auto;
+  width: 100%;
+  padding: 0 10px;
+  overflow-y: scroll;
+  text-align: center;
+}
+@media (max-width: 800px) {
+  .layout {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+  }
+  .content-wrapper {
+    max-width:100% ;
+    padding: 0;
+  }
+}

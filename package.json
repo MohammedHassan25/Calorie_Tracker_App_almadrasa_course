@@ -1,0 +1,31 @@
+{
+  "homepage": "https://MohammedHassan25.github.io/Calorie_Tracker_App_almadrasa_course",
+  "name": "calorie-tracker-app",
+  "workspaces": [
+    "packages/*"
+  ],
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "lerna run build --scope client",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d packages/client/dist",
+    "install-all": "lerna exec -- npm install",
+    "start:client": "lerna run --scope client start --stream",
+    "start:server": "lerna run --scope server start --stream",
+    "start": "concurrently --kill-others \"npm run start:server\" \"npm run start:client\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.0",
+    "gh-pages": "^6.1.1",
+    "lerna": "^7.1.1"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1"
+  }
+}
